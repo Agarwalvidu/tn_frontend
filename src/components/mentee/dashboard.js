@@ -66,7 +66,11 @@ export default function MenteeDashboard() {
     router.push('/mentee');
   };
 
-  if (!mentee) return <div>Loading...</div>;
+  if (!mentee) return (<div className="load-wrapp">
+      <div className="load-4">
+        <div className="ring-1"></div>
+      </div>
+    </div>);
   console.log(mentee);
   // components/MenteeDashboard.js
 
